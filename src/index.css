@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* -----------------
+    GENERALS
+----------------- */
+
+body {
+  background-color: #f1f8ff;
+}
+
+/* header {
+  background-color: #161014;
+} */
+/* -----------------
+   HOME PAGE
+----------------- */
+
+.home-page {
+  background-image: url("../image/restaurant.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+
+.spin-animation {
+  animation: spin 30s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.active {
+  @apply text-amber-500 font-bold;
+}
