@@ -5,6 +5,7 @@ import DefaultLayout from "./layouts/DefaultLayout";
 import HomePage from "./pages/HomePage";
 import AboutUs from "./pages/AboutUs";
 import Contatti from "./pages/Contatti";
+import Menu from "./pages/Menu";
 import PageNotFound from "./pages/PageNotFound";
 
 export default function App() {
@@ -13,7 +14,8 @@ export default function App() {
       <Routes>
         <Route Component={DefaultLayout}>
           <Route index Component={HomePage} />
-          <Route path="/about-us" Component={AboutUs} />
+          <Route path="/menu" Component={Menu} />
+          <Route path="/aboutUs" Component={AboutUs} />
           <Route path="/contatti" Component={Contatti} />
         </Route>
         <Route path="*" Component={PageNotFound} />
