@@ -20,6 +20,14 @@ export default function Header() {
           <li>
             <NavLink to="/contatti">Contact</NavLink>
           </li>
+          <li>
+            <NavLink
+              className="bg-amber-500 py-1.5 px-2.5 font-bold hover:bg-amber-600"
+              to="/login"
+            >
+              Login
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>

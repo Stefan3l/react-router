@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import ButtonBookTable from "../components/ButtonBookTable";
 
 export default function AboutUs() {
@@ -38,7 +39,9 @@ export default function AboutUs() {
             return (
               <div key={elm.id} className="card flex gap-2.5 cursor-pointer">
                 <div className="flex-col p-2.5 flex-wrap">
-                  <h2 className="font-bold text-3xl">{elm.titolo}</h2>
+                  <Link to={`/menu/${elm.id}`}>
+                    <h2 className="font-bold text-3xl">{elm.titolo}</h2>
+                  </Link>
                   <p className="my-3.5  font-medium">{elm.contenuto}</p>
                   <ol className="list-decimal pl-2.5 mb-10">
                     {elm.tags.map((tag, index) => {
