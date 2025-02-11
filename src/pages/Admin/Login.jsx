@@ -39,7 +39,7 @@ export default function LogIn() {
 
   return (
     <div>
-      <h1 className="text-center font-bold text-3xl text-orange-500 mb-8">
+      <h1 className="login-text text-center font-bold text-3xl text-orange-500 mb-8">
         Login
       </h1>
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -72,7 +72,7 @@ export default function LogIn() {
           />
         </div>
         <div className="text-center">
-          <button className="bg-gradient-to-r cursor-pointer from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-bold py-2 px-6 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300">
+          <button className="bg-[url('../image/background-login.jpg')]   bg-cover bg-center border-4 text-white font-bold py-2 px-6 rounded-lg shadow-2xl hover:shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer">
             Login
           </button>
           {error && (
